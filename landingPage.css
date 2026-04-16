@@ -83,6 +83,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  margin-bottom: 40px;
 }
 
 .lista-banner {
@@ -90,4 +91,14 @@ h1 {
   display: flex;
   gap: 12px;
   align-items: center;
+}
+
+.produtos {
+  display: block;
+  width: fit-content;
+  background-color: #eac036;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  color: #000;
 }
