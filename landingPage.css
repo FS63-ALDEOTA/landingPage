@@ -14,6 +14,10 @@ header {
   padding: 32px 160px;
 }
 
+.div-header-icon {
+  display: none;
+}
+
 .div-header-right{
   display: flex;
   gap: 12px;
@@ -44,7 +48,7 @@ header {
 }
 
 .div-banner {
-  width: 47%;
+  width: 600px;
 }
 
 h1 {
@@ -101,4 +105,67 @@ h1 {
   padding: 10px;
   border-radius: 6px;
   color: #000;
+}
+
+@media (width <= 1395px) {
+  /* .titulo-banner {
+    color: red;
+  } */
+  .section-banner {
+    justify-content: center;
+  }
+
+}
+
+@media (width <= 768px) {
+  header {
+    padding: 32px 100px;
+  }
+  .section-banner {
+      padding: 104px 100px 80px;
+  }
+}
+
+@media (width <= 638px) {
+  .section-banner > img {
+    width: 350px;
+  }
+    .ul-banner {
+    grid-template-columns: 1fr;
+  }
+  .div-btn-produtos {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@media (width <= 548px) {
+  header {
+    padding: 32px 40px;
+  }
+  .section-banner {
+      padding: 84px 40px 80px;
+  }
+}
+
+@media (width <= 375px) {
+  .div-header-icon {
+    display: block;
+    font-size: 24px;
+    color: #8047F8;
+  }
+  .div-header-right {
+    display: none;
+  }
+
+  .section-banner {
+    gap: 20px;
+  }
+  .titulo-banner {
+    font-size: 30px;
+  }
+  .texto-banner {
+    font-size: 16px;
+  }
 }
